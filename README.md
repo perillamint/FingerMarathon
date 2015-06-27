@@ -1,2 +1,2 @@
 # FingerMarathon
-LKM which logs your keypress count.
+LKM which logs your keystroke count.
