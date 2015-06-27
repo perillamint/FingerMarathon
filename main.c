@@ -16,7 +16,7 @@ int key_notifier(struct notifier_block *nblock,
 {
   struct keyboard_notifier_param *param = _param;
   if(code == KBD_KEYCODE && param -> down)
-	keycount ++;
+    keycount ++;
 
   return NOTIFY_OK;
 }
