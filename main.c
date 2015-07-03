@@ -5,14 +5,14 @@ int keycount = 0;
 module_param(keycount, int, 0444);
 
 int key_notifier(struct notifier_block *nblock,
-				 unsigned long code, void *param);
+                 unsigned long code, void *param);
 
 struct notifier_block cnt_notifier = {
   .notifier_call = key_notifier
 };
 
 int key_notifier(struct notifier_block *nblock,
-				 unsigned long code, void *_param)
+                 unsigned long code, void *_param)
 {
   struct keyboard_notifier_param *param = _param;
   if(code == KBD_KEYCODE && param -> down)
